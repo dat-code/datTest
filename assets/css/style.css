@@ -109,7 +109,7 @@ cursor: pointer;
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/img/slider/slider1.jpg') top center/ cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center/ cover no-repeat;
 }
 #slider .text-content{
     position: absolute;
@@ -211,9 +211,54 @@ cursor: pointer;
     border-radius: 50%;
     text-align: center;
     line-height: 24px;
-    margin-top: -3;
+    margin-top: -3;  
+}
+/* địa điểm và vé */
+.list-con{
+    float: left;
+    width: 33.333%;
+    padding: 0 8px;
+}
+.list-diadiem{
+    margin:32px -8px 0;
+    padding-bottom: 32px;
     
-    
+}
+.list-newyork{
+width: 100%;
+display: block;
+}
+.list-newyork:hover{
+    opacity: 0.6;
+}
+.list-bucanh{
+background-color: #fff;
+padding: 16px; 
+font-size: 15px;
+}
+.list-tieude{
+font-size: 15px;
+font-weight: 600;
+}
+.list-thoigian{
+     margin-top: 15px;
+     color: #757575;
+}
+.list-noidung-ve{
+     margin-top: 15px;
+     line-height: 1.4;
+}
+.list-muave{
+color: #fff;
+background-color: #000;
+text-decoration: none;
+padding: 11px 16px;
+display: inline-block;
+margin-top: 15px;
+}
+.list-muave:hover{
+    color:#000;
+    background-color: #ccc;
 }
 
 
@@ -224,7 +269,22 @@ cursor: pointer;
     
 }
 
- 
+ .modal{
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.3);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+ .modal-container{
+     background-color: #fff;
+     width: 900px;
+     min-height: 200px;
+ }
  
  
  
