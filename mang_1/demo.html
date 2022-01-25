@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findMin(arr) {
+            let min = arr[0];
+            for (let i = 1; i <arr.length; i++) {
+                   if(arr[i] <min) {
+                      min = arr[i];
+                   }
+            }
+            return min;
+        }
+        let run = [2,4,5,7,9,10,0,12,-2,-19,3,8];
+        
+
+        var nums = [];
+for(vari=0; i<100; ++i){
+   nums[i] = Math.floor(Math.random() * 101);
+}
+var minValue = findMin(nums);
+dispArr(nums); //Hàm này được lấy từ bài đọc thuật toán tìm kiếm
+document.write("<br/>");
+document.write("<br/>");
+document.write("The minimum value is: " + minValue);
+var maxValue = findMax(nums);
+document.write("<br/>");
+document.write("The maximum value is: " + maxValue);
+    </script>
+</body>
+</html>

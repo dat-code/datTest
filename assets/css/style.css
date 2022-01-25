@@ -214,41 +214,41 @@ cursor: pointer;
     margin-top: -3;  
 }
 /* địa điểm và vé */
-.list-con{
+.col{
     float: left;
     width: 33.333%;
     padding: 0 8px;
 }
-.list-diadiem{
+.place-list{
     margin:32px -8px 0;
     padding-bottom: 32px;
     
 }
-.list-newyork{
+.place-img{
 width: 100%;
 display: block;
 }
-.list-newyork:hover{
+.place-img:hover{
     opacity: 0.6;
 }
-.list-bucanh{
+.place-body{
 background-color: #fff;
 padding: 16px; 
 font-size: 15px;
 }
-.list-tieude{
+.place-heading{
 font-size: 15px;
 font-weight: 600;
 }
-.list-thoigian{
+.place-time{
      margin-top: 15px;
      color: #757575;
 }
-.list-noidung-ve{
+.place-desc{
      margin-top: 15px;
      line-height: 1.4;
 }
-.list-muave{
+.btn{
 color: #fff;
 background-color: #000;
 text-decoration: none;
@@ -256,7 +256,7 @@ padding: 11px 16px;
 display: inline-block;
 margin-top: 15px;
 }
-.list-muave:hover{
+.btn:hover{
     color:#000;
     background-color: #ccc;
 }
@@ -276,17 +276,99 @@ margin-top: 15px;
      left: 0;
      bottom: 0;
      background-color: rgba(0, 0, 0, 0.3);
-     display: flex;
+     display: none;
      align-items: center;
      justify-content: center;
+    }
+    .modal.open{
+        display: flex;
     }
  .modal-container{
      background-color: #fff;
      width: 900px;
      min-height: 200px;
+     position: relative;
+     animation: modalFadeIn ease .5s;
+ }
+ .modal-close{
+     position: absolute;
+     right: 0;
+     top: 0;
+     color: #fff;
+     padding: 12px;
+     cursor: pointer;
+ }
+ .modal-close:hover{
+     color: #000;
+     background-color: #f44336;
  }
  
  
+ .modal .modal-header{
+     color: #fff;
+     background-color: #009688;
+     height: 130px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+     opacity: 1.8;
+
+ }
+ .modal-heading-icon {
+     margin-right:16px ;
+
+ }
+ .modal-body{
+     padding: 16px;
+     
+ }
+ .modal-label{
+     display: block;
+     font-size: 15px;
+     margin-bottom: 12px;
+ }
+ .modal-input{
+     border: 1 solid #ccc;
+     width: 100%;  
+     padding: 10px;
+     font-size: 15px;
+
+    margin-bottom: 24px;   
+ }
+ #buy-tickets{
+     border: none;
+     background-color: #009688;
+     color: #fff;
+     width: 100%;
+     text-align: center;
+     text-transform: uppercase;
+     padding: 18px;
+     cursor: pointer;
+     font-size: 15px;
+ }
+ #buy-tickets:hover{
+     opacity: 0.9;
+ }
+ .modal-foolter{
+     padding: 16px;
+     font-size: 15px;
+     text-align: right;
+ }
+ .modal-foolter  a{
+     color:#2196F3 ;
+ }
+ @keyframes modalFadeIn {
+     from{
+         opacity: 0;
+          transform: translateY(-140);
+     }
+     to{
+         opacity: 1;
+        transform: translateY(0);
+         
+     }
+ }
  
 
 
