@@ -8,18 +8,25 @@
 </head>
 <body>
     <script>
-        let english = ['one', 'two', 'there' , 'for','five','six','seven','eight','night','ten'];
-        let vietnam = ['1','2','3','4','5','6','7','8','9','10'];
-        function  translate(usa,vanlang) {
-            let result = '';
-            for (let i =0; i<usa.length;i++) {
-              for(let j = 0; j<vanlang.length;j++) {
-                 if ( ) {
+     let a = ['one','two','three', 'for','five','six','seven','eight','night','ten'];
+     let b = ['1','2','3','4','5','6','7','8','9','10'];
+     let c = prompt('nhập vào từ muốn dịch');
+     let eng = 0;
+     let result = '';
+     for (let i = 0; i<a.length;i++) {
+        if(c == a[i]) {
+               eng = i;
+               for (let j = 0; j<b.length;j++) {
+                       if(eng == j) {
+                         result = b[j];
+                       }
+               }
+        } 
+    
+        
+     }
+     alert(result);
 
-                 }
-              }
-            }
-        }
     </script>
 </body>
 </html>

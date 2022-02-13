@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="500" style="border: 1px solid #be4646;"></canvas>
+</body>
+</html>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#00e600";
+ctx.fillRect(100,100,200,200);
+
+ctx.beginPath();
+ctx.moveTo(100,200);
+ctx.lineTo(300,200);
+ctx.stroke();
+
+ctx.beginPath();
+
+ctx.moveTo(200,100);
+ctx.lineTo(200,300);
+ctx.stroke();
+
+
+    
+// var c = document.getElementById("myCanvas");
+// var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(200,200,40,0,2*Math.PI);
+ctx.stroke();
+
+// var c = document.getElementById("myCanvas");
+// var ctx = c.getContext("2d");
+// ctx.font = "30px Arial";
+// ctx.fillText("Hello World",10,50);
+
+// var c = document.getElementById("myCanvas");
+// var ctx = c.getContext("2d");
+
+// Create gradient
+// var grd = ctx.createLinearGradient(0,0,200,0);
+// grd.addColorStop(0,"red");
+// grd.addColorStop(1,"white");
+
+// Fill with gradient
+// ctx.fillStyle = grd;
+// ctx.fillRect(10,10,150,80);
+
+// var c = document.getElementById("myCanvas");
+// var ctx = c.getContext("2d");
+
+// Create gradient
+// var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+// grd.addColorStop(0,"red");
+// grd.addColorStop(1,"white");
+
+// Fill with gradient
+// ctx.fillStyle = grd;
+// ctx.fillRect(10,10,150,80);
+</script>

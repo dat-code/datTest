@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Draw a line</title>
+</head>
+<body>
+   
+   <h1>thời gian sẽ được cập nhật</h1>
+   <p id="demo"></p>
+<script>  
+let myVar = setInterval(myTime,1000);
+function myTime(){
+   let d = new Date();
+   let t = d.toLocaleTimeString();
+   document.getElementById("demo").innerHTML = t;
+}
+
+
+</script> 
+</body>
+</html>
