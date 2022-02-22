@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Battery {
+        constructor() {
+            this.energy = 0;
+        }
+        setEnergy(energy) {
+            this.energy = energy;
+        };
+        getEnergy() {
+            return this.energy;
+        };
+        decreaseEnergy() {
+            if(this.energy > 0) {
+                 this.energy--;
+            }
+        }
+
+
+    };
+    class Flashlamp {
+        constructor() {}
+            setBattery(battery) {
+                this.battery = battery;
+            };
+            getBatterry() {
+                return this.battery;
+            }
+
+        
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Temperature {
+            celsius;
+            constructor(đc) {
+           this.celsius = đc;
+            }
+            getconvetk() {
+                return (this.celsius + 273.15) + "k";
+            }
+            getdof() {
+                return (this.celsius * 1.8 + 32) + "F";
+            }
+        }
+        let tem1 = new Temperature(25);
+        // let tem2 = new Temperature(30);
+        let f = tem1.getconvetk();
+        document.write(f);
+    </script>
+</body>
+</html>
